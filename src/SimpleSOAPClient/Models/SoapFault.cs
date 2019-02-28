@@ -35,25 +35,25 @@ namespace SimpleSOAPClient.Models
         /// <summary>
         /// The fault code
         /// </summary>
-        [XmlElement("faultcode", Namespace = "")]
+        [XmlElement("faultcode")]
         public string Code { get; set; }
 
         /// <summary>
         /// The fault string
         /// </summary>
-        [XmlElement("faultstring", Namespace = "")]
+        [XmlElement("faultstring")]
         public string String { get; set; }
 
         /// <summary>
         /// The fault actor
         /// </summary>
-        [XmlElement("faultactor", Namespace = "")]
+        [XmlElement("faultactor")]
         public string Actor { get; set; }
 
         /// <summary>
         /// The fault detail
         /// </summary>
-        [XmlAnyElement("detail", Namespace = "")]
+        [XmlAnyElement("detail")]
         public XElement Detail { get; set; }
     }
 }
